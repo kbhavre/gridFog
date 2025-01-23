@@ -34,7 +34,7 @@ const WaveGrid = () => {
     const colorInterval = setInterval(() => {
       const randomColor = `#${Math.floor(Math.random()*16777215).toString(16)}`;
       setWaveColor(randomColor);
-    }, 2000);
+    }, 5000);
 
     return () => clearInterval(colorInterval);
   }, []);
